@@ -40,6 +40,6 @@ class TaskViewSet(viewsets.ModelViewSet):
         resp = super(TaskViewSet, self).create(request, *args, **kwargs)
         task_id = resp.data['id']
 
-        t = Thread(target=PythonTask.run, args=(task_id, resp.data['input']))
+        t = Thread(target=PythonTask.start, args=(task_id, resp.data['input']))
         t.start()
         return resp

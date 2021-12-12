@@ -1,4 +1,4 @@
 .idea
 venv/**
 migrations/
-lark_web/db.sqlit3
+/lark_web/db.sqlite3
