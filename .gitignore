@@ -1,0 +1,4 @@
+.idea
+venv/**
+migrations/
+lark_web/db.sqlit3
